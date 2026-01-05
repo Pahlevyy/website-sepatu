@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;0,800;0,900;1,100;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #F8F9FA;
+    font-family: "Poppins","sans-serif";
+    min-height: 2000px;
+}
+.custom-navbar {
+    max-width: 900px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    z-index: 999;
+}
+
+.card-body {
+    padding-top: 100px;
+    margin-left: 50px;
+}
+
+.card-title .about{
+    font-size: 6rem;
+}
+
+.teks {
+    margin-top: 200px;
+}
+.hero-full {
+    margin-top: 60px;
+    background-image: url("../Image/1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 400px;
+}
+
+/* overlay biar teks kebaca */
+.hero-full::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-full .row {
+  position: relative;
+  z-index: 2;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social {
+  font-size: 28px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.social:hover {
+  transform: translateY(-5px);
+}
+
+/* warna khas tiap platform */
+.social.instagram:hover {
+  color: #E1306C;
+}
+
+.social.linkedin:hover {
+  color: #0A66C2;
+}
+
+.social.twitter:hover {
+  color: #1DA1F2;
+}
+
+/* efek saat diklik */
+.social:active {
+  transform: scale(0.9);
+  opacity: 0.7;
+}
+
+/* GALLERY GRID */
+.product-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.product-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.product-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* MODAL */
+.product-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: #fff;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 16px;
+  padding: 20px;
+  position: relative;
+}
+.modal-body {
+  display: flex;
+  gap: 30px;
+}
+
+.modal-body img {
+  width: 50%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.modal-info {
+  width: 50%;
+}
+
+.modal-info h4 {
+  color: #0d6efd;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 32px;
+  cursor: pointer;
+  z-index: 10000; /* PENTING */
+}
+
+.form-group {
+  transition: 0.3s ease;
+}
+
+.form-group:focus-within .form-label {
+  color: red;
+  transform: translateY(-5px);
+}
+
+.form-group:focus-within .form-control {
+  border-color: red;
+  box-shadow: 0 0 0 0.2rem rgba(255,0,0,.25);
+}
+
+.city-select {
+  position: relative;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 40px 12px 16px;
+  cursor: pointer;
+}
+
+.city-label {
+  color: #888;
+}
+
+.city-select select {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.arrow {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.testimoni{
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.testimoni h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.testimoni .subtitle{
+  color: #777;
+  margin-bottom: 40px;
+}
+.testimoni-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.testimoni-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.testimoni-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimoni-card .komen {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.testimoni-card h4 {
+  margin: 0;
+  color: #222;
+}
+
+.testimoni-card span {
+  font-size: 14px;
+  color: #888;
+}
+.testimoni h4{
+  font-weight: bold;
+}
+
+/* RESPONSIVE (HP) */
+@media (max-width: 768px) {
+  .modal-body {
+    flex-direction: column;
+  }
+
+  .modal-body img,
+  .modal-info {
+    width: 100%;
+  }
+   .testimoni-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+

@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sepatu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-pill mx-auto custom-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="#">Sepatu<span class="text-primary">Niku</span></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Product">Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--navbar end-->
+<!--hero section-->
+ <div class="card-body">
+  <div class="row align-items-center">
+    
+    <!-- KIRI: TEKS -->
+    <div class="col-md-6">
+      <h1 class="card-title">
+        Sepatu<span class="text-primary">Niku!</span>
+      </h1>
+      <h2 class="card-text">
+        Tempat penjualan sepatu nomor 1 di Indonesia.
+      </h2>
+      <a href="#" class="btn btn-primary mt-3">
+        BELI DISINIII!
+      </a>
+    </div>
+    <!-- KANAN: GAMBAR -->
+    <div class="col-md-6 text-center d-none d-md-block">
+      <img src="../Image/3.jfif" alt="Sepatu Niku" class="img-fluid">
+    </div>
+
+  </div>
+</div>
+<!--TEKS JUDUL-->
+ <div class="container-fluid hero-full" id="about">
+  <div class="row row h-100 justify-content-center align-items-center">
+    <div class="col-md-8 text-center text-white px-5">
+      <h1 class="mb-2">
+        Abo<span class="text-primary">ut us</span>
+      </h1>
+      <p class="mt-2">
+        Sepatu merupakan hal yang paling sering digunakan untuk keperluan pribadi seperti sekolah,
+        kuliah dan untuk hang out bersama teman dan juga jogging bersama kawan kawan horee
+      </p>
+      <div class="social-icons mt-4">
+        <a href="#" class="social instagram" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="#" class="social linkedin" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="#" class="social twitter" aria-label="Twitter">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="#" class="social facebook" aria-label="Facebook">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="#" class="social whatsapp" aria-label="Whatsapp">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="container mt-5">
+  <h2 class="text-center" style="margin-bottom: 150px; margin-top: 100px;">~~~~~Produk Kami~~~~~</h2>
+
+  <!-- GALLERY -->
+  <div class="product-gallery">
+    <!-- item -->
+    <img src="../Image/1.jpg"
+         alt="Sepatu Sport"
+         data-name="Sepatu Sport"
+         data-price="Rp 450.000"
+         data-desc="Sepatu sport nyaman untuk sekolah dan hangout."
+         onclick="openProduct(this)">
+         
+    <img src="../Image/2.jfif"
+         alt="Sepatu Casual"
+         data-name="Sepatu Casual"
+         data-price="Rp 399.000"
+         data-desc="Desain casual, ringan dan cocok untuk sehari-hari."
+         onclick="openProduct(this)">
+    <img src="../Image/3.jfif"
+         alt="Sepatu Casual"
+         data-name="Sepatu Casual"
+         data-price="Rp 399.000"
+         data-desc="Desain casual, ringan dan cocok untuk sehari-hari."
+         onclick="openProduct(this)">
+    <img src="../Image/4.jpg"
+         alt="Sepatu Casual"
+         data-name="Sepatu Casual"
+         data-price="Rp 399.000"
+         data-desc="Desain casual, ringan dan cocok untuk sehari-hari."
+         onclick="openProduct(this)">
+    <img src="../Image/5.jpg"
+         alt="Sepatu Casual"
+         data-name="Sepatu Casual"
+         data-price="Rp 399.000"
+         data-desc="Desain casual, ringan dan cocok untuk sehari-hari."
+         onclick="openProduct(this)">
+    <img src="../Image/6.jpg"
+         alt="Sepatu Casual"
+         data-name="Sepatu Casual"
+         data-price="Rp 399.000"
+         data-desc="Desain casual, ringan dan cocok untuk sehari-hari."
+         onclick="openProduct(this)">
+    <img src="../Image/7.jpg"
+         alt="Sepatu Casual"
+         data-name="Sepatu Casual"
+         data-price="Rp 399.000"
+         data-desc="Desain casual, ringan dan cocok untuk sehari-hari."
+         onclick="openProduct(this)">
+    <img src="../Image/8.jpg"
+         alt="Sepatu Casual"
+         data-name="Sepatu Casual"
+         data-price="Rp 399.000"
+         data-desc="Desain casual, ringan dan cocok untuk sehari-hari."
+         onclick="openProduct(this)">
+    <img src="../Image/9.jpg"
+         alt="Sepatu Casual"
+         data-name="Sepatu Casual"
+         data-price="Rp 399.000"
+         data-desc="Desain casual, ringan dan cocok untuk sehari-hari."
+         onclick="openProduct(this)">
+    <img src="../Image/10.jpg"
+         alt="Sepatu Casual"
+         data-name="Sepatu Casual"
+         data-price="Rp 399.000"
+         data-desc="Desain casual, ringan dan cocok untuk sehari-hari."
+         onclick="openProduct(this)">
+    <img src="../Image/11.jpg"
+         alt="Sepatu Casual"
+         data-name="Sepatu Casual"
+         data-price="Rp 399.000"
+         data-desc="Desain casual, ringan dan cocok untuk sehari-hari."
+         onclick="openProduct(this)">
+    <img src="../Image/12.jpg"
+         alt="Sepatu Casual"
+         data-name="Sepatu Casual"
+         data-price="Rp 399.000"
+         data-desc="Desain casual, ringan dan cocok untuk sehari-hari."
+         onclick="openProduct(this)">
+    <img src="../Image/13.jpg"
+         alt="Sepatu Casual"
+         data-name="Sepatu Casual"
+         data-price="Rp 399.000"
+         data-desc="Desain casual, ringan dan cocok untuk sehari-hari."
+         onclick="openProduct(this)">
+    <img src="../Image/14.jpg"
+         alt="Sepatu Casual"
+         data-name="Sepatu Casual"
+         data-price="Rp 399.000"
+         data-desc="Desain casual, ringan dan cocok untuk sehari-hari."
+         onclick="openProduct(this)">
+    <!-- tinggal copy sampai 50 foto -->
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="product-modal" id="productModal">
+  <div class="modal-content">
+    <span class="close" onclick="closeProduct()">&times;</span>
+
+    <div class="modal-body">
+      <img id="modalImg" src="" alt="">
+
+      <div class="modal-info">
+        <h3 id="modalName"></h3>
+        <p id="modalDesc"></p>
+        <h4 id="modalPrice"></h4>
+        <button class="btn btn-primary mt-3"
+        onclick="document.getElementById('Pembelian').scrollIntoView({behavior:'smooth'})">
+          Beli Sekarang</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <h2 class="text-center" style="margin-top: 200px;" id="Pembelian">~~~~~Info Pembelian~~~~~</h2>
+
+  <section class="container mt-5">
+  <div class="row align-items-center">
+
+    <!-- KIRI: FORM -->
+    <div class="col-md-6">
+      <form id="orderForm">
+
+        <div class="mb-3 form-group">
+          <label for="nama" class="form-label">
+            Masukkan nama anda
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            id="nama"
+          >
+        </div>
+
+        <div class="mb-3">
+          <label for="kota" class="form-label">
+            Pilihan sepatu yang tersedia
+          </label>
+          <select id="kota" name="kota" class="form-select">
+            <option value="">-- Pilih --</option>
+            <option value="PUMA">PUMA</option>
+            <option value="NIKE">NIKE</option>
+            <option value="ADIDAS">ADIDAS</option>
+            <option value="SPECS">SPECS</option>
+          </select>
+        </div>
+
+        <!-- CUSTOM SELECT DOMISILI -->
+        <div class="mb-3 city-select position-relative">
+          <span class="city-label" id="cityLabel">
+            Pilih domisili
+          </span>
+
+          <span class="arrow">▼</span>
+
+          <select id="domisili" class="form-select">
+            <option value="" disabled selected hidden></option>
+            <option value="Jakarta">Jakarta</option>
+            <option value="Bandung">Bandung</option>
+            <option value="Surabaya">Surabaya</option>
+          </select>
+        </div>
+
+        <div class="mb-3 form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="exampleCheck1"
+          >
+          <label class="form-check-label" for="exampleCheck1">
+            Check out           </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          Submit
+        </button>
+
+      </form>
+    </div>
+
+    <!-- KANAN: GAMBAR -->
+    <div class="col-md-6 text-center d-none d-md-block">
+      <img
+        src="../Image/15.png"
+        alt="Sepatu Niku"
+        class="img-fluid"
+      >
+    </div>
+  </div>
+</section>
+  <div class="container mt-5">
+  <p class="text-center">
+    Kami adalah toko sepatu yang berkomitmen untuk memberikan produk berkualitas tinggi kepada setiap pelanggan kami.
+    Dengan berbagai macam pilihan sepatu yang nyaman, stylish, dan terjangkau, kami siap membantu Anda menemukan sepatu
+    yang sesuai dengan gaya dan kebutuhan Anda.
+  </p>
+</div>
+
+<section class="testimoni">
+  <h2>Apa kata merekaaa??</h2>
+  <p class="subtit">
+    Testimoni pelanggan sepatu<span class="text-primary">Niku!!</span>.
+  </p>
+  <div class="testimoni-container">
+    <div class="testimoni-card">
+      <p class="komen">
+        "Sepatunya nyaman banget, kualitas premium tapi harga masuk akal.
+        Pengiriman juga cepat!"
+      </p>
+      <h4>Andi pratama</h4>
+      <span>pelanggan</span>
+    </div>
+    <div class="testimoni-card">
+      <p class="komen">
+        "Awalnya ragu beli online, tapi ternyata bagus banget.
+      Bakal repeat order!"
+      </p>
+      <h4>Ronal pratama</h4>
+      <span>pelanggan</span>
+    </div>
+    <div class="testimoni-card">
+      <p class="komen">
+        "Modelnya keren, dipakai harian enak.
+        Recommended buat anak muda."
+      </p>
+      <h4>Bisma Surya</h4>
+      <span>pelanggan</span>
+    </div>
+  </div>
+</section>
+<!--hero section end-->
+<!--footer-->
+<footer class="bg-dark text-light pt-5 pb-3 mt-5" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">Sepatu<span class="text-primary">Niku!!</span></h5>
+        <p class="small">
+           Menyediakan sepatu casual dan sporty berkualitas untuk menemani aktivitas harianmu.
+        </p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">Menu</h5>
+        <ul class="list-unstyled">
+          <li><a href="#home" class="text-light text-decoration-none">Tentang Kami</a></li>
+          <li><a href="#about" class="text-light text-decoration-none">Tentang Kami</a></li>
+          <li><a href="#produk" class="text-light text-decoration-none">Produk</a></li>
+          <li><a href="#pembelian" class="text-light text-decoration-none">Pembelian</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5 class="fw-bold">Kontak</h5>
+        <p class="small mb-1">📍 Jakarta, Indonesia</p>
+        <p class="small mb-1">📧 admin@sepatuku.com</p>
+        <p class="small mb-1">📞 0812-3456-7890</p>
+      </div>
+    </div>
+    <hr class="border-secondary">
+    <div class="text-center small">
+       © 2025 SepatuNiku. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
