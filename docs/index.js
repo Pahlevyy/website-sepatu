@@ -58,3 +58,11 @@ document.getElementById('orderForm').addEventListener('submit', function (e) {
     })
     .catch((err) => console.error(err));
 });
+
+function goCheckout() {
+  const nama = document.getElementById('modalName').innerText;
+  const hargaText = document.getElementById('modalPrice').innerText.replace(/[^\d]/g, '');
+  const gambar = document.getElementById('modalImg').src;
+
+  window.location.href = `checkout.html?produk=${encodeURIComponent(nama)}&harga=${hargaText}&gambar=${encodeURIComponent(gambar)}`;
+}

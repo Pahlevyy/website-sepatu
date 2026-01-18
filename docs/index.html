@@ -6,11 +6,12 @@
     <title>Sepatu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
 <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-pill mx-auto custom-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-pill mx-auto custom-navbar" data-aos="fade-down">
   <div class="container">
     <a class="navbar-brand" href="#">Sepatu<span class="text-primary">Niku</span></a>
 
@@ -38,23 +39,23 @@
 </nav>
 <!--navbar end-->
 <!--hero section-->
- <div class="card-body">
+ <div class="card-body" data-aos="fade-up">
   <div class="row align-items-center">
-    
+
     <!-- KIRI: TEKS -->
-    <div class="col-md-6">
+    <div class="col-md-6" data-aos="fade-right">
       <h1 class="card-title">
         Sepatu<span class="text-primary">Niku!</span>
       </h1>
       <h2 class="card-text">
         Tempat penjualan sepatu nomor 1 di Indonesia.
       </h2>
-      <a href="#" class="btn btn-primary mt-3">
+      <a href="#Product" class="btn btn-primary mt-3" data-aos="zoom-in">
         BELI DISINIII!
       </a>
     </div>
     <!-- KANAN: GAMBAR -->
-    <div class="col-md-6 text-center d-none d-md-block">
+    <div class="col-md-6 text-center d-none d-md-block" data-aos="fade-left">
       <img src="Image/3.jfif" alt="Sepatu Niku" class="img-fluid">
     </div>
 
@@ -65,7 +66,7 @@
   <div class="row row h-100 justify-content-center align-items-center">
     <div class="col-md-8 text-center text-white px-5">
       <h1 class="mb-2">
-        Abo<span class="text-primary">ut us</span>
+        Abo<span class="text-primary">ut</span>
       </h1>
       <p class="mt-2">
         Sepatu merupakan hal yang paling sering digunakan untuk keperluan pribadi seperti sekolah,
@@ -93,11 +94,11 @@
   </div>
 </div>
 
-<section class="container mt-5">
-  <h2 class="text-center" style="margin-bottom: 150px; margin-top: 100px;">~~~~~Produk Kami~~~~~</h2>
+<section id="Product" class="container mt-5" data-aos="fade-up">
+  <h2 class="text-center" style="margin-bottom: 150px; margin-top: 100px;" data-aos="zoom-in">~~~~~Produk Kami~~~~~</h2>
 
   <!-- GALLERY -->
-  <div class="product-gallery">
+  <div class="product-gallery" data-aos="fade-up" data-aos-delay="200">
     <!-- item -->
     <img src="Image/1.jpg"
          alt="Sepatu Sport"
@@ -201,19 +202,19 @@
         <p id="modalDesc"></p>
         <h4 id="modalPrice"></h4>
         <button class="btn btn-primary mt-3"
-        onclick="document.getElementById('Pembelian').scrollIntoView({behavior:'smooth'})">
+        onclick="goCheckout()">
           Beli Sekarang</button>
       </div>
     </div>
   </div>
 </div>
-  <h2 class="text-center" style="margin-top: 200px;" id="Pembelian">~~~~~Info Pembelian~~~~~</h2>
+  <h2 class="text-center" style="margin-top: 200px;" id="Pembelian" data-aos="zoom-in">~~~~~Info Pembelian~~~~~</h2>
 
-  <section class="container mt-5">
+  <section class="container mt-5" data-aos="fade-up">
   <div class="row align-items-center">
 
     <!-- KIRI: FORM -->
-    <div class="col-md-6">
+    <div class="col-md-6" data-aos="fade-right">
       <form id="orderForm">
 
         <div class="mb-3 form-group">
@@ -266,7 +267,7 @@
             Check out           </label>
         </div>
 
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" class="btn btn-primary" onclick="finishOrder()">
           Submit
         </button>
 
@@ -325,16 +326,16 @@
 </section>
 <!--hero section end-->
 <!--footer-->
-<footer class="bg-dark text-light pt-5 pb-3 mt-5" id="contact">
+<footer class="bg-dark text-light pt-5 pb-3 mt-5" id="contact" data-aos="fade-up">
   <div class="container">
     <div class="row">
-      <div class="col-md-4 mb-3">
+      <div class="col-md-4 mb-3" data-aos="fade-right">
         <h5 class="fw-bold">Sepatu<span class="text-primary">Niku!!</span></h5>
         <p class="small">
            Menyediakan sepatu casual dan sporty berkualitas untuk menemani aktivitas harianmu.
         </p>
       </div>
-      <div class="col-md-4 mb-3">
+      <div class="col-md-4 mb-3" data-aos="fade-up">
         <h5 class="fw-bold">Menu</h5>
         <ul class="list-unstyled">
           <li><a href="#home" class="text-light text-decoration-none">Tentang Kami</a></li>
@@ -343,7 +344,7 @@
           <li><a href="#pembelian" class="text-light text-decoration-none">Pembelian</a></li>
         </ul>
       </div>
-      <div class="col-md-4 mb-3">
+      <div class="col-md-4 mb-3" data-aos="fade-left">
         <h5 class="fw-bold">Kontak</h5>
         <p class="small mb-1">📍 Jakarta, Indonesia</p>
         <p class="small mb-1">📧 admin@sepatuku.com</p>
@@ -351,7 +352,7 @@
       </div>
     </div>
     <hr class="border-secondary">
-    <div class="text-center small">
+    <div class="text-center small" data-aos="fade-up">
        © 2025 SepatuNiku. All rights reserved.
     </div>
   </div>
@@ -359,6 +360,10 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="index.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
